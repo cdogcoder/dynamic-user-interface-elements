@@ -103,3 +103,7 @@ body {
     animation-fill-mode: forwards;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
