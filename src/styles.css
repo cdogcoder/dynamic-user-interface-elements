@@ -46,6 +46,9 @@ body {
     top: 0;
     left: 0;
     width: 100vw;
+    animation-duration: .25s;
+    animation-name: slideUp;
+    animation-timing-function: linear;
 }
 
 @keyframes slideDown {
@@ -57,6 +60,18 @@ body {
     }
     100% {
         top: 0;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: -100px;
+    }
+    100% {
+        top: -200px;
     }
 }
 
@@ -78,9 +93,13 @@ body {
     animation-duration: .25s;
     animation-name: slideDown;
     animation-timing-function: linear;
+    animation-fill-mode: forwards;
 }
 
 .invisible {
-    visibility: hidden;
+    animation-duration: .25s;
+    animation-name: slideUp;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
 }
 
