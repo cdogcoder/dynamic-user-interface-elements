@@ -46,6 +46,21 @@ body {
     top: 0;
     left: 0;
     width: 100vw;
+    animation-duration: .25s;
+    animation-name: slideDown;
+    animation-timing-function: linear;
+}
+
+@keyframes slideDown {
+    0% {
+        top: -200px;
+    }
+    50% {
+        top: -100px;
+    }
+    100% {
+        top: 0;
+    }
 }
 
 .close-dropdown-menu-button {
@@ -68,3 +83,4 @@ body {
 .invisible {
     visibility: hidden;
 }
+
