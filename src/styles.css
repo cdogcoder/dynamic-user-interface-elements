@@ -48,6 +48,15 @@ body {
     width: 100vw;
 }
 
+.close-dropdown-menu-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+}
+
 .menu {
     list-style-type: none;
 }
