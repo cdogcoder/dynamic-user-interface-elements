@@ -46,9 +46,6 @@ body {
     top: 0;
     left: 0;
     width: 100vw;
-    animation-duration: .25s;
-    animation-name: slideDown;
-    animation-timing-function: linear;
 }
 
 @keyframes slideDown {
@@ -78,6 +75,9 @@ body {
 
 .visible {
     visibility: visible;
+    animation-duration: .25s;
+    animation-name: slideDown;
+    animation-timing-function: linear;
 }
 
 .invisible {
