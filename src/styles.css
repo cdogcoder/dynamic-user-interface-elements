@@ -3,10 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
 }
 
 body {
-    background-color:rgb(127, 158, 185);
+    background-color:rgb(59, 59, 59);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,7 +18,7 @@ body {
     padding: 1rem;
     align-items: center;
     gap: 1rem;
-    background-color: rgba(0, 0, 128, 0.5);
+    background-color: rgb(0, 0, 0);
     font-size: 1.5rem;
     width: 100vw;
 }
@@ -27,10 +28,12 @@ body {
     height: 50px;
     width: 50px;
     border-radius: 3rem;
-    border: 2px solid black;
 }
 
 .dropdown-menu-button {
+    border: none;
+    outline: none;
+    background: none;
     margin-left: auto;
     padding: .25rem;
     font-size: 1.5rem;
@@ -41,7 +44,7 @@ body {
 
 .dropdown-menu {
     position: absolute;
-    background-color: rgba(98, 182, 255, .8);
+    background-color: rgba(59, 59, 59, 0.5);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -125,28 +128,25 @@ body {
     gap: 3rem;
 }
 
-.images {
-    flex: 1;
-    height: 80%;
-    border: 2px solid red;
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
-}
-
 [class*="image"] {
-    border: 2px solid red;
     animation-duration: .5s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    border: 2px solid black;
+    border-radius: 12px;
 }
 
-.blue {
-    border: 2px solid blue;
+.images {
+    flex: 1;
+    height: 80%;
+    border: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .image:nth-child(3) {
@@ -165,27 +165,22 @@ body {
 }
 
 .first {
-    border: 10px solid red;
     background-image: url("./one.jpg");
 }
 
 .second {
-    border: 10px solid orange;
     background-image: url("./two.webp");
 }
 
 .third {
-    border: 10px solid yellow;
     background-image: url("./three.jpg");
 }
 
 .fourth {
-    border: 10px solid green;
     background-image: url("./four.jpg");
 }
 
 .fifth {
-    border: 10px solid purple;
     background-image: url("./five.jpeg");
 }
 
@@ -257,11 +252,12 @@ body {
 }
 
 .left-arrow, .right-arrow {
-    font-size: 1.5rem;
+    font-size: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
     background: none;
     border: none;
     outline: none;
+    color: black;
 }
