@@ -137,7 +137,7 @@ body {
 
 [class*="image"] {
     border: 2px solid red;
-    animation-duration: 2s;
+    animation-duration: .5s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
     background-position: center;

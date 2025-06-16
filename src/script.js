@@ -29,3 +29,21 @@ rightArrow.addEventListener("click", () => {
     newImage.style.setProperty("animation-name", "defaultExpand");
     console.log(images)
 })
+
+const leftArrow = document.querySelector(".left-arrow");
+leftArrow.addEventListener("click", () => {
+    const imageAnimationNames = ["tertiaryShrink", "secondaryShrink", "primaryShrink", "secondaryExpand", "tertiaryExpand"]
+    const images = document.querySelectorAll(".images *")
+    const imageHolder = document.querySelector(".images");
+    const firstImageClassNames = images[0].className;
+    for (let i = 0; i < images.length; i++) {
+        images[i].style.setProperty("animation-name", imageAnimationNames[i]);
+    }
+    imageHolder.removeChild(images[0]);
+    const newImage = document.createElement("div");
+    newImage.classList = firstImageClassNames;
+    newImage.style.cssText = "height: 000px; flex: 0;"
+    imageHolder.appendChild(newImage);
+    newImage.style.setProperty("animation-name", "defaultExpand");
+    console.log(images)
+})
