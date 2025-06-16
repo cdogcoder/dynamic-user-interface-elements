@@ -17,12 +17,13 @@ rightArrow.addEventListener("click", () => {
     const imageAnimationNames = ["tertiaryExpand", "secondaryExpand", "primaryShrink", "secondaryShrink", "tertiaryShrink"]
     const images = document.querySelectorAll(".images *")
     const imageHolder = document.querySelector(".images");
+    const lastImageClassNames = images[images.length-1].className;
     for (let i = 0; i < images.length; i++) {
         images[i].style.setProperty("animation-name", imageAnimationNames[i]);
     }
     imageHolder.removeChild(images[images.length-1]);
     const newImage = document.createElement("div");
-    newImage.classList = "image blue";
+    newImage.classList = lastImageClassNames;
     newImage.style.cssText = "height: 000px; flex: 0;"
     imageHolder.prepend(newImage);
     newImage.style.setProperty("animation-name", "defaultExpand");

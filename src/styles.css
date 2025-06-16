@@ -140,6 +140,9 @@ body {
     animation-duration: 2s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .blue {
@@ -159,6 +162,31 @@ body {
 .image:first-of-type, .image:last-of-type {
     flex: 1;
     height: 100px;
+}
+
+.first {
+    border: 10px solid red;
+    background-image: url("./one.jpg");
+}
+
+.second {
+    border: 10px solid orange;
+    background-image: url("./two.webp");
+}
+
+.third {
+    border: 10px solid yellow;
+    background-image: url("./three.jpg");
+}
+
+.fourth {
+    border: 10px solid green;
+    background-image: url("./four.jpg");
+}
+
+.fifth {
+    border: 10px solid purple;
+    background-image: url("./five.jpeg");
 }
 
 @keyframes primaryShrink {
