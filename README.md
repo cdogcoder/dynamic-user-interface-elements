@@ -1,1 +1,3 @@
 # dynamic-user-interface-elements
+
+Hey everyone! This is my first pseudo project for the Odin Project! This is a pseudo project since on the curriculum, this is technically not considered a project, but rather an exercise for students to practice building real-world elements using JavaScript. Today, I will be building a dropdown menu and image carousel with just plain JavaScript. As always, any media that is not my own will be linked below; please show all the creators some love! With that said, thank you for viewing this repo and I hope you enjoy the project!
